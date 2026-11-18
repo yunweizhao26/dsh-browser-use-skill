@@ -1,0 +1,18 @@
+This bundle adapts the agent skill shipped with browser-use / browser-harness.
+
+Upstream:
+  browser-use    https://github.com/browser-use/browser-use
+  browser-harness https://github.com/browser-use/browser-harness
+  Citation       Müller, Magnus and Žunič, Gregor. "Browser Use: Enable AI to
+                 control your browser." 2024.
+  License        MIT
+
+Upstream copyright holders retain all rights in the original text. The skill in
+this package is a derivative work: sections were reorganised, condensed, and
+extended with PowerShell invocation, token-budget guidance, parallel-agent
+rules, and additional troubleshooting. The upstream MIT license text is
+reproduced in LICENSE and applies to this work as a whole.
+
+Browser Use Cloud, Browser Use, and DeepSeek Harness are trademarks of their
+respective owners. This is an independent, unofficial package; it is not
+affiliated with or endorsed by either project.

@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Browser use skill",
+    "description": "Adds an agent skill that drives a real Chrome over CDP from a persistent Python REPL: navigate, click, type, extract, screenshot — with token-budget and parallel-agent guidance."
+  }
+}
