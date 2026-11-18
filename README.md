@@ -2,7 +2,7 @@
 
 > The browser-use agent skill, packaged for DeepSeek Harness.
 
-This is a **fork of the browser-use agent skill** (MIT) — not of the browser-use Python project. The skill text comes from [browser-use/browser-use](https://github.com/browser-use/browser-use) and is rebuilt for DSH: one persistent Python REPL, the browser-harness helpers and raw CDP, plus the parts a general-purpose skill cannot know — PowerShell invocation, a token budget, and how to run several agents at once without them fighting over a tab. Attribution and the upstream license are in `NOTICE`.
+This package forks the browser-use agent skill, the document that ships with [browser-use/browser-use](https://github.com/browser-use/browser-use). It is rebuilt for DSH around one persistent Python REPL, the browser-harness helpers and raw CDP, and extended with what a general-purpose skill cannot know: PowerShell invocation, a token budget, and how to run several agents at once without them fighting over a tab. The browser-use Python project itself is untouched. Attribution and the upstream license are in `NOTICE`.
 
 ```
   ● skill loads                browser-use — 1.6k tokens, on demand
@@ -14,7 +14,7 @@ This is a **fork of the browser-use agent skill** (MIT) — not of the browser-u
   ✓ one call, ten steps        ~200 characters back into context
 ```
 
-**A skill, not a bridge. It registers no model-facing tool and calls no cloud API.**
+The bundle adds guidance. It does not add a model-facing tool, and it never calls a cloud API.
 
 ## Which piece do you need?
 
@@ -22,7 +22,7 @@ This is a **fork of the browser-use agent skill** (MIT) — not of the browser-u
 | --- | --- |
 | An agent that drives a real browser from your own code | this package, plus the `browser-use` CLI |
 | A hosted browser and model behind one API key | [Browser Use Cloud](https://docs.browser-use.com/cloud/agent/quickstart) |
-| A model-facing tool that wraps the cloud API | other community bridges — this one deliberately is not that |
+| A model-facing tool that wraps the cloud API | a different package; this one teaches the CLI instead |
 
 ## Install
 
@@ -134,24 +134,10 @@ skills/browser-use/scripts/      ensure-browser.ps1
 
 ## Honest limits
 
-- **Guidance, not enforcement.** It cannot stop a model from printing a 50k-token tree.
+- **The skill gives guidance and enforces nothing.** A model can still print a 50k-token tree.
 - **Consent is per connection.** Chrome does not remember remote-debugging approval.
 - **Upstream moves.** The skill tracks browser-use 1.0.6 behaviour; a later release may change helpers.
 - **Unofficial.** Not affiliated with Browser Use or DeepSeek. Browser Use Cloud, Browser Use, DeepSeek Harness and their logos belong to their owners.
-
-## Citation
-
-If you write about the underlying project, cite upstream:
-
-```bibtex
-@software{browser_use2024,
-  author  = {Müller, Magnus and Žunič, Gregor},
-  title   = {Browser Use: Enable AI to control your browser},
-  year    = {2024},
-  publisher = {GitHub},
-  url     = {https://github.com/browser-use/browser-use}
-}
-```
 
 ## License
 

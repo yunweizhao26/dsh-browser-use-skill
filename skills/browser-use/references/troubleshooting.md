@@ -57,4 +57,4 @@ BU_NAME=r7k2 browser-use mac-approve
 
 ## Scope limits
 
-Domain allow/block lists and the CDP guard are protections for an aligned model, not a sandbox. Model-written Python can reach the network and anything the page can read. No helper guarantees that a CAPTCHA can be avoided or that a site tolerates automation.
+Domain allow/block lists and the CDP guard protect an aligned model; they cannot sandbox it. Model-written Python can reach the network and anything the page can read. No helper guarantees that a CAPTCHA can be avoided or that a site tolerates automation.

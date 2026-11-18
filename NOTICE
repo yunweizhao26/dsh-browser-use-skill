@@ -13,6 +13,17 @@ extended with PowerShell invocation, token-budget guidance, parallel-agent
 rules, and additional troubleshooting. The upstream MIT license text is
 reproduced in LICENSE and applies to this work as a whole.
 
+Upstream asks for citation from anyone writing about their project. This package
+makes no citation request of its own:
+
+  @software{browser_use2024,
+    author    = {Müller, Magnus and Žunič, Gregor},
+    title     = {Browser Use: Enable AI to control your browser},
+    year      = {2024},
+    publisher = {GitHub},
+    url       = {https://github.com/browser-use/browser-use}
+  }
+
 Browser Use Cloud, Browser Use, and DeepSeek Harness are trademarks of their
-respective owners. This is an independent, unofficial package; it is not
-affiliated with or endorsed by either project.
+respective owners. An independent, unofficial package: the maintainers of
+neither project reviewed or endorse it.
