@@ -1,5 +1,7 @@
 # dsh-browser-use-skill
 
+English | [中文](README.zh-CN.md)
+
 > The browser-use agent skill, packaged for DeepSeek Harness.
 
 This package forks the browser-use agent skill, the document that ships with [browser-use/browser-use](https://github.com/browser-use/browser-use). It is rebuilt for DSH around one persistent Python REPL, the browser-harness helpers and raw CDP, and extended with what a general-purpose skill cannot know: PowerShell invocation, a token budget, and how to run several agents at once without them fighting over a tab. The browser-use Python project itself is untouched. Attribution and the upstream license are in `NOTICE`.
